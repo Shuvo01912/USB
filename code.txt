@@ -1,0 +1,21 @@
+@echo off
+echo. > logfile.txt
+echo Log File >> logfile.txt
+echo. >> logfile.txt
+echo User : %username% >> logfile.txt
+Date /t >>logfile.txt
+Time /t >> logfile.txt
+echo. >> logfile.txt
+echo Process Run by %username% >> l1.txt
+echo. >> logfile.txt
+systeminfo >> logfile.txt
+echo. >> logfile.txt
+tasklist >> logfile.txt
+echo Network Activities >> logfile.txt
+netstat -s >> logfile.txt
+echo Network Connections >> logfile.txt
+netstat -ano >> logfile.txt
+ipconfig -all >> logfile.txt
+route print >> logfile.txt
+net user >> logfile.txt
+exit
